@@ -1,0 +1,118 @@
+/* B code challenge  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    background: linear-gradient(338deg, #32b492, #99b640, #2c5bd0, #db2645, #1bdf11, #ec8917);
+    background-size: 1200% 1200%;
+    height: 100vh;
+    -webkit-animation: background 10s ease infinite;
+    -moz-animation: background 10s ease infinite;
+    animation: background 10s ease infinite;
+
+}
+@-webkit-keyframes background {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}
+@-moz-keyframes background {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}
+@keyframes background {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}
+.modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 630px;
+    padding: 15px;
+    width: 100%;
+}
+.modal_inside{
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+.modal_header{
+    padding: 10px;
+    font-size: 32px;
+    text-align: center;
+    font-family: cursive;
+    background-color: black;
+    color: white;
+}
+
+.modal_container{
+    padding: 15px;
+    text-align: center;
+    background-color: #dadada;
+    font-size: 20px;
+}
+form{
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+form input, select, button {
+    border-radius: 4px;
+    margin: auto 5px;
+    border: 1px solid;
+}
+form input, form select{
+    height: 50px;
+    border-radius: 4px;
+    font-size: 22px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+form button{
+    height: 50px;
+    max-width: 150px;
+    width: 100%;
+    background-color: gray;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+form p {
+    width: 100%;
+    color: red;
+}
+.list-books{
+    max-height: 500px;
+    overflow-y: auto;
+}
+.list-books > div{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.list-books p{
+    width: 50%;
+}
+.readed-true{
+    color: green;
+}
+.readed-false{
+    color: red;
+}
+.row{
+    display: flex;
+}
+.row p {
+    width: 50%;
+}
